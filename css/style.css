@@ -1,9 +1,3 @@
-@font-face {
-  font-family: "Biko";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Biko"), local("Open Sans-Regular"), url("../fonts/biko_regular-webfont.woff") format("woff"), url("../fonts/biko_regular-webfont.woff2") format("woff2"); }
-
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -408,6 +402,12 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: "Biko";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Biko"), local("Open Sans-Regular"), url("../fonts/biko_regular-webfont.woff") format("woff"), url("../fonts/biko_regular-webfont.woff2") format("woff2"); }
+
 body {
   font-family: "Biko";
   font-style: normal;
@@ -500,14 +500,11 @@ input:-o-input-placeholder {
     height: 20px;
     top: 32px;
     right: 8px;
-    background: url("../img/magnifier.svg") white; }
+    background: url("../img/magnifier.svg") #ffffff; }
 
 .form__legend {
   text-align: center;
   padding-bottom: 10px;
-  color: #ffffff; }
-
-.form__text {
   color: #ffffff; }
 
 .form__input {
@@ -809,14 +806,6 @@ input:-o-input-placeholder {
   .widget {
     margin-left: 395px; } }
 
-@media (min-width: 1500px) {
-  .wrapper__img {
-    margin-left: 400px; }
-  .sidebar {
-    width: 30%; }
-  .widget {
-    margin-left: 400px; } }
-
 @media (min-width: 1200px) {
   .wrapper__img {
     margin-left: 380px; }
@@ -826,6 +815,14 @@ input:-o-input-placeholder {
     margin-left: 550px; }
   .widget__day {
     padding-right: 40px; } }
+
+@media (min-width: 1500px) {
+  .wrapper__img {
+    margin-left: 400px; }
+  .sidebar {
+    width: 30%; }
+  .widget {
+    margin-left: 400px; } }
 
 @media (min-width: 2001px) {
   .wrapper__img {
