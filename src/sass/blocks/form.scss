@@ -1,0 +1,43 @@
+.form {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.form__fieldset {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &::before {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 32px;
+    right: 8px;
+    background: url("../img/magnifier.svg") white;
+  }
+}
+
+.form__legend {
+  text-align: center;
+  padding-bottom: 10px;
+  color: #ffffff;
+}
+
+.form__text {
+  color: #ffffff;
+}
+
+.form__input {
+  position: relative;
+  padding: 5px 0 5px 10px;
+  margin-bottom: 30px;
+  background-color: #A870FF;
+  color: #ffffff;
+  opacity: 1;
+  border: none;
+  outline: none;
+}

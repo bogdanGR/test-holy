@@ -1,0 +1,83 @@
+body {
+  font-family: "Biko";
+  font-style: normal;
+  font-weight: 400;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #a870ff;
+
+  &--search {
+    background-color: #ff7070;
+  }
+}
+
+.wrapper__img {
+  padding: 20px 0;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+input::-webkit-input-placeholder {
+  opacity: 0.5;
+  color: #ffffff;
+}
+
+input:-moz-placeholder {
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  opacity: 1;
+}
+input:-o-input-placeholder {
+  opacity: 1;
+}
+@media (min-width: 700px) {
+  .wrapper--search {
+    display: block;
+  }
+  .wrapper__img {
+    margin: 0;
+    margin-left: 14%;
+
+    &--search {
+      margin-left: 10%;
+    }
+  }
+}
+@media (min-width: 850px) {
+  .wrapper__img {
+    margin-left: 290px;
+  }
+}
+@media (min-width: 1000px) {
+  .wrapper__img {
+    margin-left: 460px;
+  }
+}
+@media (min-width: 1500px) {
+  .wrapper__img {
+    margin-left: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper__img {
+    margin-left: 380px;
+
+    &--search {
+      margin-left: 46%;
+    }
+  }
+}
+@media (min-width: 2001px) {
+  .wrapper__img {
+    margin: 0 auto;
+    margin-left: 50%;
+
+    &--search {
+      margin: 0 auto 0 47%;
+    }
+  }
+}
