@@ -1,0 +1,145 @@
+.widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.widget__current-day {
+  margin-bottom: 0;
+  font-size: 25px;
+  text-align: center;
+  color: #70FF91;
+}
+
+.widget__location {
+  font-size: 25px;
+  line-height: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+.widget__day {
+  display: flex;
+  flex-direction: column;
+}
+
+.widget__current-max {
+  display: block;
+  position: relative;
+  padding-top: 30px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #70FF91;
+  text-align: center;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    right: 50px;
+    top: 22px;
+    background-image: url("../img/Celcium.svg");
+  }
+}
+
+.widget__current-min {
+  display: block;
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #70FF91;
+  text-align: center;
+  opacity: 0.5;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    right: 80px;
+    top: 24px;
+    background-image: url("../img/Celcium.svg");
+  }
+}
+
+.widget__title {
+  padding-bottom: 15px;
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+
+.widget__img {
+  width: 95px;
+  margin: 0 auto;
+}
+
+.widget__max {
+  display: block;
+  position: relative;
+  padding-top: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #70FF91;
+  text-align: center;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    right: 55px;
+    top: 20px;
+    background-image: url("../img/Celcium.svg");
+  }
+}
+
+.widget__min {
+  display: block;
+  padding-top: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #70FF91;
+  text-align: center;
+  opacity: 0.5;
+}
+@media (min-width: 700px) {
+  .widget {
+    align-items: center;
+  }
+
+  .widget__max {
+    &::after {
+      right: 5px;
+    }
+  }
+
+  .widget__wrapper {
+    &--top {
+      width: 200px;
+      padding-bottom: 40px;
+    }
+
+    &--bottom {
+      display: flex;
+      margin-left: 50px;
+    }
+  }
+
+  .widget__day {
+    padding-right: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .widget__day {
+    padding-right: 40px;
+  }
+}

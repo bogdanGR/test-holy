@@ -1,0 +1,54 @@
+body {
+    font-family: "Biko";
+    font-style: normal;
+    font-weight: 400;
+    background-color: #a870ff;
+}
+.body-color {
+  background-color: #ff7070;
+}
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #a870ff;
+    &--search {
+        background-color: #ff7070;
+    }
+}
+
+
+input::-webkit-input-placeholder {
+    opacity: 0.5;
+    color: #ffffff;
+}
+
+input:-moz-placeholder {
+    opacity: 1;
+}
+
+input:-ms-input-placeholder {
+    opacity: 1;
+}
+
+input:-o-input-placeholder {
+    opacity: 1;
+}
+
+@media (min-width: 700px) {
+    .wrapper--search {
+        display: block;
+    }
+    .sidebar--opened~.page-main>.container {
+        transform: translateX(60px)
+    }
+    .sidebar--opened~.page-main>.page-main__img {
+        transform: translateX(calc(-50% + 60px))
+    }
+}
+@media (max-width: 700px) {
+  .wrapper {
+    height: 0;
+  }
+
+}
