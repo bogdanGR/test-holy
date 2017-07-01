@@ -37,26 +37,18 @@
 }
 @media (min-width: 700px) {
   .sidebar {
-    /*  ширна произвольная, не стесняйтесь экспериментировать */
     width: 15%;
     min-width: 15%;
-    /* фиксируем и выставляем высоту панели на максимум */
     height: 100%;
     position: fixed;
     top: 0;
     bottom: 0;
     margin: 0;
-    /* сдвигаем (прячем) панель относительно левого края страницы */
-    // left: -320px;
-    /* внутренние отступы */
     padding: 15px 20px;
-    /* плавный переход смещения панели */
     -webkit-transition: left 0.3s;
     -moz-transition: left 0.3s;
     transition: left 0.3s;
-    /* определяем цвет фона панели */
     background: #6ffe90;
-    /* поверх других элементов */
   }
 
   .sidebar__title {
