@@ -12,9 +12,8 @@
 </svg>
   <div class="wrapper">
     <button class="burger" type="button">
-    <span class="burger__layer">переключатель</span>
+      <span class="burger__layer">toggle</span>
   </button>
-    <img class="wrapper__img" src="img/umbrella_small.svg" alt="logo">
     <a class="page-main__link  page-main__link--right" href="">Add to Favorites
     <svg class="page-main__svg" width="28" height="25">
       <use xlink:href="#heart"></use>
@@ -45,48 +44,51 @@
     </section>
   </aside>
   <main class="page-main">
-    <section class="widget">
-      <div class="widget__wrapper  widget__wrapper--top">
-        <p class="widget__current-day">Today</p>
-        <p class="widget__location">Athens, GR</p>
-        <img class="widget__current-img" src="img/clouds.svg" alt="clouds" width="203" height="101">
-        <span class="widget__current-max">14</span>
-        <span class="widget__current-min">11</span>
-      </div>
+    <img class="page-main__img" src="img/umbrella_small.svg" alt="logo">
+    <div class="container">
+      <section class="widget">
+        <div class="widget__wrapper  widget__wrapper--top">
+          <p class="widget__current-day">Today</p>
+          <p class="widget__location">Athens, GR</p>
+          <img class="widget__current-img" src="img/clouds.svg" alt="clouds" width="203" height="101">
+          <span class="widget__current-max">14</span>
+          <span class="widget__current-min">11</span>
+        </div>
 
-      <div class="widget__wrapper  widget__wrapper--bottom">
-        <div class="widget__day">
-          <p class="widget__title">Tue</p>
-          <img class="widget__img" src="img/rain.svg" alt="rain" width="95" height="95">
-          <span class="widget__max">15</span>
-          <span class="widget__min">14</span>
+        <div class="widget__wrapper  widget__wrapper--bottom">
+          <div class="widget__day">
+            <a  class="widget__title" href="#">Tue</a>
+            <img class="widget__img" src="img/rain.svg" alt="rain" width="95" height="95">
+            <span class="widget__max">15</span>
+            <span class="widget__min">14</span>
+          </div>
+          <div class="widget__day">
+            <a class="widget__title" href="#">Wed</a>
+            <img class="widget__img" src="img/sunwithcloud.svg" alt="sun with clouds" width="95" height="95">
+            <span class="widget__max">15</span>
+            <span class="widget__min">12</span>
+          </div>
+          <div class="widget__day">
+            <a class="widget__title" href="#">Thu</a>
+            <img class="widget__img" src="img/sun.svg" alt="sun" width="95" height="95">
+            <span class="widget__max">15</span>
+            <span class="widget__min">11</span>
+          </div>
+          <div class="widget__day">
+            <a class="widget__title" href="#">Fri</a>
+            <img class="widget__img" src="img/sun.svg" alt="sun" width="95" height="95">
+            <span class="widget__max">15</span>
+            <span class="widget__min">10</span>
+          </div>
+          <div class="widget__day">
+            <a class="widget__title" href="#">Sat</a>
+            <img class="widget__img" src="img/sunwithcloud.svg" alt="sun with clouds" width="95" height="95">
+            <span class="widget__max">15</span>
+            <span class="widget__min">14</span>
+          </div>
         </div>
-        <div class="widget__day">
-          <p class="widget__title">Wed</p>
-          <img class="widget__img" src="img/sunwithcloud.svg" alt="sun with clouds" width="95" height="95">
-          <span class="widget__max">15</span>
-          <span class="widget__min">12</span>
-        </div>
-        <div class="widget__day">
-          <p class="widget__title">Thu</p>
-          <img class="widget__img" src="img/sun.svg" alt="sun" width="95" height="95">
-          <span class="widget__max">15</span>
-          <span class="widget__min">11</span>
-        </div>
-        <div class="widget__day">
-          <p class="widget__title">Fri</p>
-          <img class="widget__img" src="img/sun.svg" alt="sun" width="95" height="95">
-          <span class="widget__max">15</span>
-          <span class="widget__min">10</span>
-        </div>
-        <div class="widget__day">
-          <p class="widget__title">Sat</p>
-          <img class="widget__img" src="img/sunwithcloud.svg" alt="sun with clouds" width="95" height="95">
-          <span class="widget__max">15</span>
-          <span class="widget__min">14</span>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
   <script src="js/main.js" type="text/javascript"></script>
 </body>
